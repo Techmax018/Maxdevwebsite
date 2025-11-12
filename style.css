@@ -173,7 +173,7 @@ a:hover {
 
 /* Home Section */
 .home-section {
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://via.placeholder.com/1920x1080/0d0d0d/00f0f0?text=Abstract+Background') no-repeat center center/cover;
+    background: linear-gradient(to bottom left, #00008B, #8B0000);), no-repeat center center/cover;
     display: flex;
     flex-direction: column; /* Changed to column to stack elements */
     justify-content: center;
@@ -1064,4 +1064,5 @@ a:hover {
     .footer-container {
         font-size: 0.85em;
     }
+
 }
