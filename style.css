@@ -838,6 +838,16 @@ a:hover {
 }
 
 /* Keyframe Animations */
+@keyframes color-breath {
+  0%, 100% {
+    /* Starting state: Dark Teal and Blue-Green */
+    background: linear-gradient(to bottom left, #004D40, #00A3A3);
+  }
+  50% {
+    /* Mid-state: Lighten the Dark Teal to make it "breathe" */
+    background: linear-gradient(to bottom left, #00806D, #00A3A3);
+  }
+}
 @keyframes slideRight {
     0% { transform: translateX(-100px); opacity: 0; }
     100% { transform: translateX(0); opacity: 1; }
@@ -1066,6 +1076,7 @@ a:hover {
     }
 
 }
+
 
 
 
