@@ -5,22 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UnderworldTech - Portfolio</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- Icons & Fonts -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GDJV6XQJ4Y"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-GDJV6XQJ4Y');
+    </script>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GDJV6XQJ4Y"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-GDJV6XQJ4Y');
-</script>
 <body>
 
+    <!-- Header Navigation -->
     <header class="main-header">
-        <a href="logo.png" class="logo">Max<span>Devs</span></a>
+        <!-- Fixed: Changed href from logo.png to #home-section so it navigates correctly -->
+        <a href="#home-section" class="logo">Max<span>Devs</span></a>
         <div class="bx bx-menu" id="menu-icon"></div>
 
         <nav class="navbar-nav">
@@ -32,52 +37,56 @@
             <a href="#contact-section" class="nav-link">Contact</a>
         </nav>
     </header>
+
+    <!-- Home Section -->
     <section class="section home-section" id="home-section">
-    <div class="home-detail">
-        <div class="home-text">
-            <h1>Hi, I'm <span>Max</span></h1>
-            <h2 class="dynamic-heading">
-                <span id="typed-word"></span><span class="blinking-cursor">|</span>
-            </h2>
-            <p>I'm a passionate and creative professional with expertise in web development, digital content creation, and an artistic flair for dance. Bringing innovative solutions and engaging experiences to life.</p>
-            <div class="btn-sci">
-                <a href="https://docs.google.com/document/d/1gNMEojXvqrQ16tPm8Mllx4ER3F0NpCJ2E7OAtxHo2D0/export?format=pdf" class="btn primary-btn">Download CV</a>
-                <div class="social-links">
-                    <a href="https://www.tiktok.com/@maxx.exe401?_t=ZM-90LeeudlCvM&_r=1" target="_blank" class="icon"><i class='bx bxl-tiktok'></i></a>
-                    <a href="https://x.com/?lang=en" target="_blank" class="icon"><i class='bx bxl-twitter x-icon'></i></a>
-                    <a href="https://www.linkedin.com/in/max-njuguna-35741a385?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://www.instagram.com/_pro._.max/" target="_blank" class="icon"><i class='bx bxl-instagram'></i></a>
+        <div class="home-detail">
+            <div class="home-text">
+                <h1>Hi, I'm <span>Max</span></h1>
+                <h2 class="dynamic-heading">
+                    <span id="typed-word"></span><span class="blinking-cursor">|</span>
+                </h2>
+                <p>I'm a passionate and creative professional with expertise in web development, digital content creation, and an artistic flair for dance. Bringing innovative solutions and engaging experiences to life.</p>
+                <div class="btn-sci">
+                    <a href="https://docs.google.com/document/d/1gNMEojXvqrQ16tPm8Mllx4ER3F0NpCJ2E7OAtxHo2D0/export?format=pdf" class="btn primary-btn" download>Download CV</a>
+                    <div class="social-links">
+                        <a href="https://www.tiktok.com/@maxx.exe401?_t=ZM-90LeeudlCvM&_r=1" target="_blank" rel="noopener noreferrer" class="icon"><i class='bx bxl-tiktok'></i></a>
+                        <a href="https://x.com/?lang=en" target="_blank" rel="noopener noreferrer" class="icon"><i class='bx bxl-twitter x-icon'></i></a>
+                        <a href="https://www.linkedin.com/in/max-njuguna-35741a385?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="icon"><i class='bx bxl-linkedin'></i></a>
+                        <a href="https://www.instagram.com/_pro._.max/" target="_blank" rel="noopener noreferrer" class="icon"><i class='bx bxl-instagram'></i></a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="home-img">
-        <div class="img-box">
-            <div class="img-item">
-                <img src="logopic.jpg" alt="Your Photo">
+        <div class="home-img">
+            <div class="img-box">
+                <div class="img-item">
+                    <img src="logopic.jpg" alt="Max Njuguna Profile Photo">
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
+    <!-- About Section -->
     <section class="section about-section" id="about-section">
         <h2 class="heading">About <span>Me</span></h2>
         <div class="about-container">
             <div class="about-img">
-                 <img src="7332805921746486278_avatar.png.jpg" alt="About Me">
-                 <img src="dev.jpg" alt="About Me">
-                 <img src="DSC_0561f (1).jpg" alt="About Me">
+                 <img src="7332805921746486278_avatar.png.jpg" alt="Max Avatar Illustration">
+                 <img src="dev.jpg" alt="Max Coding at Desk">
+                 <img src="DSC_0561f (1).jpg" alt="Max Professional Portrait">
             </div>
             <div class="about-text">
                 <h3>Passionate Developer & Creative Enthusiast!</h3>
                 <p>Hello! I'm Max Njuguna, a dedicated web developer with a keen eye for detail and a passion for creating engaging digital experiences. My journey in tech started with a curiosity for how things work online, which quickly evolved into a drive to build them myself.</p>
                 <p>Beyond coding, I delve into content creation as a TikToker, exploring new ways to connect and share. My love for dance also fuels my creativity, offering a dynamic balance to the logical world of programming. I believe in continuous learning and leveraging diverse skills to tackle challenges and deliver impactful solutions.</p>
-                <a href="#" class="btn primary-btn">Learn More</a>
+                <a href="#portfolio-section" class="btn primary-btn">Learn More</a>
             </div>
         </div>
     </section>
 
+    <!-- Services Section -->
     <section class="section services-section" id="services-section">
         <h2 class="heading">My <span>Services</span></h2>
         <div class="services-container">
@@ -114,6 +123,7 @@
         </div>
     </section>
 
+    <!-- Resume Section -->
     <section class="section resume-section" id="resume-section">
         <h2 class="heading">My <span>Resume</span></h2>
         <div class="resume-container">
@@ -128,6 +138,7 @@
             </div>
 
             <div class="details-box">
+                <!-- Education Tab -->
                 <div class="resume-details education-details active">
                     <h3 class="heading">Education</h3>
                     <ul class="resume-list">
@@ -139,13 +150,14 @@
                         </li>
                         <li class="resume-item">
                             <span class="year">2019 - 2022</span>
-                            <h3>High School </h3>
+                            <h3>High School</h3>
                             <span class="company">Maralal High School</span>
                             <p>Completed secondary education with a focus on computer science.</p>
                         </li>
                     </ul>
                 </div>
 
+                <!-- Experience Tab -->
                 <div class="resume-details experience-details">
                     <h3 class="heading">Experience</h3>
                     <ul class="resume-list">
@@ -160,7 +172,7 @@
                             </ul>
                         </li>
                         <li class="resume-item">
-                            <span class="year"> 2025</span>
+                            <span class="year">2025</span>
                             <h3>Intern</h3>
                             <span class="company">University Of Eldoret</span>
                             <ul>
@@ -171,20 +183,20 @@
                     </ul>
                 </div>
 
+                <!-- Skills Tab -->
                 <div class="resume-details skills-details">
                     <h3 class="heading">Skills</h3>
                     <ul class="skills-list">
                         <li>HTML5</li>
                         <li>CSS3</li>
                         <li>JavaScript (ES6+)</li>
-                    
                         <li>Java</li>
                         <li>React.js</li>
                         <li>Node.js</li>
                         <li>Express.js</li>
                         <li>MongoDB</li>
-                        <li>MySql</li>
-                        <li>spring framework</li>
+                        <li>MySQL</li>
+                        <li>Spring Framework</li>
                         <li>Git</li>
                         <li>Responsive Design</li>
                         <li>UI/UX Principles</li>
@@ -193,14 +205,15 @@
                     </ul>
                     <div class="skills-links">
                         <p style="margin-top:20px; font-weight: 600;">Check out my social media for more:</p>
-                        <a href="https://github.com/Techmax018/?tab=repositories">GitHub Repositories</a>
-                        <a href="https://blue-moon-travel.vercel.app"> latest project</a>
+                        <a href="https://github.com/Techmax018/?tab=repositories" target="_blank" rel="noopener noreferrer">GitHub Repositories</a>
+                        <a href="https://blue-moon-travel.vercel.app" target="_blank" rel="noopener noreferrer">Latest Project</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Portfolio Section -->
     <section class="section portfolio-section" id="portfolio-section">
         <h2 class="heading">My <span>Portfolio</span></h2>
         <div class="portfolio-container">
@@ -255,11 +268,11 @@
         </div>
     </section>
 
+    <!-- Contact & Footer Section -->
     <section class="section contact-section" id="contact-section">
         <h2 class="heading">Contact <span>Me</span></h2>
         <div class="contact-container">
-            <form action="#"
- class="contact-form">
+            <form action="#" class="contact-form">
                 <div class="form-group">
                     <label for="name">Your Name</label>
                     <input type="text" id="name" name="name" required placeholder="Enter your name">
@@ -282,20 +295,17 @@
 
         <footer class="footer">
             <div class="footer-container">
-                <p>&copy; <span id="currentYear"></span> UnderworldTechology. All Rights Reserved.</p>
-                <p>Designed by <a href="#" target="_blank">UnderworldTech</a></p>
+                <p>&copy; <span id="currentYear"></span> Underworld Technology. All Rights Reserved.</p>
+                <p>Designed by <a href="#home-section">UnderworldTech</a></p>
             </div>
         </footer>
     </section>
 
-
-
+    <!-- Scripts -->
     <script src="script.js"></script>
     <script>
         // Dynamically set current year in footer
         document.getElementById('currentYear').textContent = new Date().getFullYear();
     </script>
 </body>
-
 </html>
-
