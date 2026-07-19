@@ -636,90 +636,183 @@ a:hover {
 
 /* Portfolio Section */
 .portfolio-section {
-    background-color: var(--secondary-bg-color);
+    background: linear-gradient(135deg, rgba(9, 14, 28, 0.96), rgba(17, 24, 39, 0.98));
+    position: relative;
+}
+
+.portfolio-intro {
+    text-align: center;
+    max-width: 760px;
+    margin-bottom: 40px;
+}
+
+.section-label {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: rgba(0, 240, 240, 0.12);
+    color: var(--accent-color);
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    font-size: 0.78em;
+    margin-bottom: 16px;
+}
+
+.section-intro {
+    color: #cbd5e1;
+    font-size: 1.05em;
+    margin-top: 10px;
 }
 
 .portfolio-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 35px;
-    padding-top: 20px;
+    grid-template-columns: 1fr;
+    gap: 24px;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1240px;
 }
 
-.portfolio-box {
-    background: var(--card-bg);
-    border-radius: 10px;
+.portfolio-card {
+    position: relative;
     overflow: hidden;
-    box-shadow: 0 4px 20px var(--shadow-dark);
-    position: relative; /* For image overlay or background effect */
-    min-height: 280px; /* Minimum height for consistent cards */
-    display: flex;
-    align-items: flex-end; /* Align detail to bottom */
-    transition: transform var(--transition-speed), box-shadow var(--transition-speed), border var(--transition-speed);
-    border: 2px solid transparent;
-    /* Optional: Add a background image here or use a default placeholder */
-    background: url('https://via.placeholder.com/350x200/222222/00f0f0?text=Project+Thumbnail') no-repeat center center/cover;
+    border-radius: 24px;
+    padding: 24px;
+    background: rgba(15, 23, 42, 0.92);
+    border: 1px solid rgba(148, 163, 184, 0.18);
+    box-shadow: 0 20px 45px rgba(2, 6, 23, 0.35);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.portfolio-box:nth-child(even) {
-    background-image: url('https://via.placeholder.com/350x200/2a2a2a/00e060?text=Project+Thumbnail+2'); /* Alternate background */
-}
-
-.portfolio-box:hover {
-    transform: translateY(-15px);
-    border-color: var(--accent-color);
-    box-shadow: 0 8px 25px var(--shadow-light);
-}
-
-.portfolio-box::before { /* Overlay for text readability */
+.portfolio-card::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.1) 100%);
-    z-index: 1;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(0, 240, 240, 0.12), transparent 55%);
+    pointer-events: none;
 }
 
-.portfolio-detail {
-    position: relative;
-    z-index: 2;
-    padding: 20px;
-    width: 100%;
+.portfolio-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(0, 240, 240, 0.45);
+    box-shadow: 0 24px 55px rgba(0, 240, 240, 0.12);
+}
+
+.portfolio-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.project-index {
+    font-size: 0.9em;
+    font-weight: 800;
+    color: var(--accent-color);
+    letter-spacing: 0.2em;
+}
+
+.project-type {
+    font-size: 0.8em;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+}
+
+.portfolio-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 14px;
     color: var(--light-text-color);
 }
 
-.portfolio-detail .numb {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3em;
-    font-weight: 900;
-    color: rgba(0, 240, 240, 0.2); /* Faded accent */
-    position: absolute;
-    top: -5px;
-    left: 20px;
-    opacity: 0.8;
+.project-points {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 18px;
+    display: grid;
+    gap: 10px;
 }
 
-.portfolio-detail h3 {
-    font-size: 1.8em;
-    margin-bottom: 10px;
+.project-points li {
+    position: relative;
+    padding-left: 18px;
+    color: #dbe4f0;
+    line-height: 1.65;
+    font-size: 0.95em;
+}
+
+.project-points li::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
     color: var(--accent-color);
 }
 
-.portfolio-detail p {
-    font-size: 1.05em;
-    color: var(--text-color);
-    margin-bottom: 15px;
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 18px 0 22px;
 }
 
-.portfolio-detail .tech {
-    font-size: 0.9em;
-    color: var(--secondary-accent-color);
-    font-weight: 600;
-    display: block;
+.tech-pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 7px 12px;
+    border-radius: 999px;
+    background: rgba(59, 130, 246, 0.14);
+    color: #bfdbfe;
+    font-size: 0.82em;
+    font-weight: 700;
+    border: 1px solid rgba(59, 130, 246, 0.24);
+}
+
+.card-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.card-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 14px;
+    border-radius: 999px;
+    background: var(--accent-color);
+    color: #03111f;
+    font-weight: 700;
+    font-size: 0.95em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(0, 240, 240, 0.16);
+    color: #03111f;
+}
+
+.card-btn-secondary {
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--light-text-color);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.card-btn-secondary:hover {
+    color: var(--light-text-color);
+}
+
+@media (min-width: 768px) {
+    .portfolio-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1100px) {
+    .portfolio-container {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
 }
 
 /* Contact Section */
