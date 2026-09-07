@@ -135,8 +135,12 @@ a:hover {
 }
 
 .logo img {
-    height: 40px; /* Ensure logo image is styled */
+    height: 60px;
+    width: 60px;
     margin-right: 10px;
+    border-radius: 50%;
+    object-fit: contain;
+    flex-shrink: 0;
 }
 
 .navbar-nav a {
